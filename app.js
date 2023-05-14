@@ -90,7 +90,6 @@ function plotTides(tidePoints) {
 
 (async () => {
   const tideData = await fetchTideData();
-  console.log('tideData', tideData);
   const tidePoints = processTideData(tideData);
   plotTides(tidePoints);
 })();
